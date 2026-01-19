@@ -1,1 +1,139 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ROOT COLORS */
+:root {
+  --primary-color: #605dc8;
+  --secondary-color: #e8e7fa;
+  --accent-color: #4b48b8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* BODY */
+body {
+  background-color: #f8f8ff;
+  color: #333;
+}
+
+/* HEADER / LOGO */
+header {
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+header img {
+  height: 32px;
+}
+
+/* SEARCH BAR */
+section form {
+  display: flex;
+  gap: 0.75rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+section form input {
+  width: 300px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+section form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+section form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* RESULTS GRID */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* HOUSING CARD */
+.listing {
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+.listing-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CARD CONTENT */
+.listing-heading {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.listing-location {
+  padding: 0 1rem 1rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* LINK */
+.listing a {
+  margin: 1rem;
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.listing a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON CLASS */
+button.primary {
+  background-color: var(--primary-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  section form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section form input {
+    width: 100%;
+  }
+}
+.logo {
+  color: #605dc8;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
