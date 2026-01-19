@@ -29,14 +29,14 @@ It demonstrates core Angular concepts using the **standalone component architect
 ## 📂 Project Structure
 src/
 ├── app/
-│   ├── home/
- │   ├── housing-location/
- │   ├── housing.service.ts
- │   ├── housinglocation.ts
- │   ├── app.routes.ts
- │   └── app.html
- ├── assets/
- └── styles.css
+│ ├── home/ # Home component (main listing page)
+│ ├── housing-location/ # Housing location card component
+│ ├── housing.service.ts # Service to manage housing data
+│ ├── housinglocation.ts # HousingLocation interface
+│ ├── app.routes.ts # Application routing configuration
+│ └── app.html # Root application template
+├── assets/ # Images and static assets
+└── styles.css # Global application styles
 
 output:
 <img width="1760" height="990" alt="image" src="https://github.com/user-attachments/assets/60943145-12d8-423b-a2f6-fcbe01de3930" />
